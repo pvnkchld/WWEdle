@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWEdle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <div class="game-container">
   <div class="main-title-container">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFyUo-aKOV6nMrTBECjiSxXGnAq0IJzcD4VQ&s" alt="WWE Logo" class="wwe-logo">
@@ -14,24 +24,31 @@
 
   <p>Số lần đoán: <span id="countDisplay">0</span></p>
 
-  <div class="header-row">
-    <span>NAME</span>
-    <span>ERA</span>
-    <span>BRAND</span>
-    <span>DEBUT</span>
-    <span>HGT</span>
-    <span>ALIGN</span>
-    <span>RR</span>
-    <span>RET?</span>
-  </div>
+  <div class="board-wrapper">
+    <div class="header-row">
+      <span>NAME</span>
+      <span>ERA</span>
+      <span>BRAND</span>
+      <span>DEBUT</span>
+      <span>HGT</span>
+      <span>ALIGN</span>
+      <span>RR</span>
+      <span>RET?</span>
+    </div>
 
-  <div id="resultTable"></div>
+    <div id="resultTable"></div>
+  </div>
 </div>
 
 <div id="winModal" class="modal">
   <div class="modal-content">
     <h2 class="win-title">CHAMPION!</h2>
-    <p id="winMessage"></p>
+    <div id="winMessage"></div>
     <button onclick="location.reload()" class="retry-btn">CHƠI LẠI</button>
   </div>
 </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
