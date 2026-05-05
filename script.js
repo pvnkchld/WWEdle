@@ -127,7 +127,7 @@ function checkGuess() {
         modal.style.display = "block";
         msg.innerHTML = `
           <div style="font-size: 1.2rem; margin: 15px 0;">
-            Bạn đã đoán đúng <strong>${secretWrestler.name}</strong><br>
+            Ding ding ding! Bạn đã đoán trúng <strong>${secretWrestler.name}</strong><br>
             sau <strong>${guessCount}</strong> lần thử!
           </div>
         `;
