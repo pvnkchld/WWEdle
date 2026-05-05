@@ -160,3 +160,7 @@ button:hover {
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(231, 29, 35, 0.7);
   animation: modalPop 0
+  @keyframes modalPop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
